@@ -24,8 +24,8 @@ const reviewRoutes = require('./routes/reviews');
 //const { contentSecurityPolicy } = require("helmet");
 
 //const dbUrl = process.env.DB_URL; //ATLAS
-const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp'; //Development DB
-
+//const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp'; //Development DB
+const dbUrl = 'mongodb://localhost:27017/yelp-camp';
 
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
